@@ -1,0 +1,44 @@
+/* TenantDetails.css */
+.tenant-details-table {
+  width: 80%; /* Set the width of the table */
+  margin: 0 auto; /* Center align the table */
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.label-column {
+  text-align: left;
+  font-weight: bold;
+  padding: 8px; /* Add padding to the header cells */
+  border-bottom: 1px solid #ccc; /* Add bottom border for separation */
+}
+
+.tenant-details-container {
+  padding: 20px;
+}
+
+.tenant-details-table td {
+  padding: 8px; /* Add padding to the data cells */
+  border-bottom: 1px solid #eee; /* Add bottom border for separation */
+}
+
+/* Optional: Alternate row background color */
+.tenant-details-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray background for even rows */
+}
+.st{
+  margin-left: 170px;
+display: flex;
+gap: 20px;
+flex-direction: column;
+position: relative;
+}
+.h{
+  margin-left: 170px;
+  margin-top: 100px;
+}
+.search-bar{
+  position: absolute;
+  bottom: 130px; 
+  right: 10px
+}

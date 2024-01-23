@@ -1,0 +1,23 @@
+/* Foot2.css */
+.f2{
+  display: flex;
+  flex-direction: column;
+  justify-content:last baseline ;
+  border: 1px solid black;
+  align-items: center;
+  background-color: black;
+  color: whitesmoke;
+  border-top:2px ;
+  gap: 4px;
+}
+.pf{
+display: flex;
+flex-direction: row;
+gap: 9px;
+}
+.sp{
+  cursor: pointer;
+}
+.sp:hover{
+  color: brown;
+}
