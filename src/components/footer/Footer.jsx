@@ -22,16 +22,16 @@ function Footer() {
           </div>
           <div className="fContainerList">
             <h1>Contact</h1>
-            <span>email:Gt23@gmail.com</span>
-            <span>Phone no:+91....</span>
+            <span>email:GtRent467U@gmail.com</span>
+            <span>Phone no:+91 73903 89901</span>
             <span>Location:Chennai</span>
             
           </div>
           <div className="fContainerList">
             <h1>Services</h1>
-            <span>Apartment</span>
-            <span>Apartment</span>
-            <span>Apartment</span>
+            <span>upload room</span>
+            <span>Rent it</span>
+            <span>user friendly.</span>
           </div>
         </div>
         <hr />

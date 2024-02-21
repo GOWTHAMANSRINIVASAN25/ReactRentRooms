@@ -10,7 +10,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 function TenantDetails() {
   const navigate = useNavigate();
   const location = useLocation();
-  const { name, p_no, address, adhar } = location.state || {};
+  const { name, p_no,adhar } = location.state || {};
 console.log(name);
  /* const [tenantData, setTenantData] = useState([{
     u_name:'',
@@ -55,7 +55,6 @@ console.log(name);
                 <th className='label-column'>S.NO</th>
                 <th className='label-column'>Name</th>
                 <th className='label-column'>Phone_Number</th>
-                <th className='label-column'>Address</th>
                 <th className='label-column'>Aadhar Proof Submitted</th>
                 <th className='label-column'>Consolidate</th>
               </tr>
@@ -63,7 +62,6 @@ console.log(name);
             <td>1</td>
             <td>{name}</td>
             <td>{p_no}</td>
-            <td>{address}</td>
           <td>Yes</td>
           <td><button>Accept</button>{' '}<button>Reject</button></td>
            </tr>

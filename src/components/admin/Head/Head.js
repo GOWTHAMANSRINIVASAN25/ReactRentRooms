@@ -6,6 +6,7 @@ import "./Head.css"
 export const Head = () => {
   return (
    <div className='head'>
+    <h2 className='ah'>GT Rents</h2>
     <p className='ph'><FontAwesomeIcon icon={faUser} />Admin </p>
 
    <Link to="/" className='li'><FontAwesomeIcon icon={faRightFromBracket}  className='f'/>Logout</Link>

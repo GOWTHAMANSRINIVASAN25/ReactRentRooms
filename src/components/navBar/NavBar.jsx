@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import "./NavBar.scss";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 function NavBar() {
   const [show, setShow] = useState(false);
   const { user, dispatch } = useContext(AuthContext);
@@ -16,7 +17,7 @@ function NavBar() {
       <div className="navBarComponent">
         <div className="left">
           <Link to="/" className="link">
-            <h1>GT Rents</h1>
+            <h2><FontAwesomeIcon icon={faHouse} />GT Rents</h2>
           </Link>
         </div>
         <div className="middle">

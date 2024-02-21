@@ -24,7 +24,7 @@ function Upload() {
     setSelectedFiles([...e.target.files]);
   };
 
-  const handleUpload = async (e) => {
+ /* const handleUpload = async (e) => {
     e.preventDefault();
 
     const newPost = {
@@ -56,21 +56,21 @@ function Upload() {
     } catch (error) {
       console.log("Error uploading images:", error);
     }
-  };
+  };*/
 
   return (
     <>
       <NavBar />
       <div className="upload">
         <div className="uploadContainer">
-          <h1>Upload your House, Apartment or Room Here</h1>
+          <h1>Upload your House, Shop or Room Here</h1>
           <div className="imageFolder">
             {/* display selected images */}
             {selectedFiles.map((file, index) => (
               <img key={index} src={URL.createObjectURL(file)} alt="" />
             ))}
           </div>
-          <form onSubmit={handleUpload} encType="multipart/form-data">
+          <form >
             <div className="label">
               <label htmlFor="">Upload photos</label>
               <input

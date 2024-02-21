@@ -1,27 +1,27 @@
 /* Grid.css */
-.sidebar-admin{
-    display: flex;
-    flex-direction: column;
-    gap: 78px;
-    padding: 20px;
-    border-right: 2px solid whitesmoke;
-    height: 100vh; 
-    width: 180px;
-    background-color:aqua;
-    align-items: flex-start;
-    position:absolute;
-  }
-  
-  .l {
-    text-decoration: none;
-  font-size: 11px; /* Adjust size as needed */
-  font-weight:100; /* Adjust weight as needed */
-  color: black; /* Adjust color as needed */
+
+.sidebar-admin {
+  display: flex;
+  flex-direction: column;
+  gap: 78px;
+  padding: 20px;
+  border-right: 2px solid whitesmoke;
+  height: 100vh;
+  width: 180px;
+  background-color: aqua;
+  align-items: flex-start;
+  position: absolute;
+}
+
+.l {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 100;
+  color: black;
   word-wrap: break-word;
-  }
-  
-  .l:hover {
-    color: blue; 
-    font-size: 20px;
-  }
-  
+}
+
+.l:hover {
+  color: blue;
+  font-size: 20px;
+}

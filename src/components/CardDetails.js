@@ -1,4 +1,4 @@
-// CardDetails.js
+import { Head2 } from './head2/Head2';
 import React, { useState, useEffect } from 'react';
 import { useParams,useNavigate } from 'react-router-dom';
 import data from './db/data';
@@ -25,8 +25,7 @@ const CardDetails = () => {
 
   // Simulated function to fetch card details using the 'id'
   const fetchCardData = async (cardId) => {
-    // Logic to fetch details based on cardId
-    // For example, find the card data from the imported 'data' array
+  
     const selectedCard = data.find((card) => card.id === parseInt(cardId));
 
     // Set the card data
@@ -38,11 +37,11 @@ const CardDetails = () => {
   }, [id]);
 
   return (
-   
+   <>
+   <Head2/>
     <div className='cardDetails'>
       {cardData ? (
         <>
-       
        
           <img src={cardData.img} alt='' className='img1'/>
        
@@ -58,8 +57,6 @@ const CardDetails = () => {
       <p className='pp'>Parking:   {cardData.parking}</p>
       <br/><hr></hr>
       <br></br>
-      <h1>Description</h1><br/>
-      <p>Room rent refers to the payment made by a tenant to a landlord in exchange for the use of a designated space within a property, typically outlined in a rental agreement</p>
           </section>
         <section className='ik'>
           <h1> Monthly Rent:Rs.{cardData.prevPrice}</h1><br/>
@@ -77,8 +74,10 @@ const CardDetails = () => {
       ) : (
         <p>Loading...</p>
       )}
-      <Foot2/>
+     
     </div>
+    <Foot2/>
+    </>
   
    
   );

@@ -16,7 +16,9 @@ function Tenant() {
   const [police, setPolice] = useState([]);
   const[doc,setDoc]=useState([]);
   const [selectedFiles, setSelectedFiles] = useState([]);
-
+  const[street,setStreet]=useState("");
+  const[city,setCity]=useState("");
+  const[pincode,setPincode]=useState("");
 
 
   const navigate = useNavigate();
@@ -28,7 +30,6 @@ function Tenant() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Assuming Aadhar proof is mandatory for submission
     const aadharProofSubmitted = selectedFiles.some(file => file.name.includes('Aadhar'));
 
 
@@ -36,7 +37,6 @@ function Tenant() {
     navigate('/Tenant_Details', { state: { 
       name:name,
       p_no:phone,
-      address:address,
       adhar:aadhar,
      } });
   };
@@ -46,7 +46,7 @@ function Tenant() {
       <NavBar />
       <div className="upload">
         <div className="uploadContainer">
-          <h1>Upload Proof Veriication</h1>
+          <h1>Upload Proof Verification</h1>
           <div className="imageFolder">
             {/* display selected images */}
             {selectedFiles.map((file, index) => (
@@ -75,14 +75,14 @@ function Tenant() {
             <div className="label">
               <label htmlFor="">Phone_Number</label>
               <input
-                type="number"
+                type="text"
                 placeholder="+91"
                 required
                 onChange={(e) => setPhone(e.target.value)}
               />
             </div>
             <div className="label">
-              <label htmlFor="">Upload Bank or Income proof</label>
+              <label htmlFor="">Income proof</label>
               <input
                 type="file"
                multiple
@@ -100,12 +100,33 @@ function Tenant() {
               />
             </div>
             <div className="label">
-              <label htmlFor="">Address</label>
+              <label htmlFor="">Street</label>
               <input
+                value={street}
                 type="text"
-                placeholder="Enter your Address"
+                placeholder="Enter your Street"
                 required
-                onChange={(e) => setAddress(e.target.value)}
+                onChange={(e) => setStreet(e.target.value)}
+              />
+            </div>
+            <div className="label">
+              <label htmlFor="">City</label>
+              <input
+                value={city}
+                type="text"
+                placeholder="Enter your City"
+                required
+                onChange={(e) => setCity(e.target.value)}
+              />
+            </div>
+            <div className="label">
+              <label htmlFor="">Pincode</label>
+              <input
+                value={pincode}
+                type="text"
+                placeholder="Enter Pincode here"
+                required
+                onChange={(e) => setPincode(e.target.value)}
               />
             </div>
             <div className="label">
@@ -135,7 +156,7 @@ function Tenant() {
                 onChange={(e)=>setDoc(e.target.value)}
               />
             </div>
-            <button>Upload</button>
+            <button className="up">Upload Proof</button>
           </form>
         </div>
       </div>

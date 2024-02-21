@@ -38,6 +38,7 @@ const Nav = ({ handleInputChange, query }) => {
             <div className="dropdown-content">
               <Link to="/profile">My Profile</Link>
               <Link to="/bookings">My Bookings</Link>
+              <Link to="/">Logout</Link>
             </div>
           )}
       </div>

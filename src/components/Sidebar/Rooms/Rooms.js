@@ -8,7 +8,7 @@ function Rooms({ handleChange }) {
 
       <div>
         <label className="sidebar-label-container">
-          <input onChange={handleChange} type="radio" value="" name="test1" />
+          <input onChange={handleChange} type="checkbox" value="" name="test1" />
           <span className="checkmark"></span>All
         </label>
         <Input

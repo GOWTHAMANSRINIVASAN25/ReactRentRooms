@@ -3,11 +3,12 @@ import R1 from "../assest/first.png";
 import R2 from "../assest/second.jpg";
 import R3 from "../assest/third.jpg";
 import R4 from "../assest/orth.jpg";
-
+import R5 from "../assest/new1.jpg";
+import R6 from "../assest/new2.jpg";
 const data = [
   {
     id: 1,
-    img: Rooms,
+    img: R6,
     title: "Semi and furnished Room",
     prevPrice: 3000,
     newPrice: "50",
@@ -43,7 +44,7 @@ const data = [
   },
   {
     id: 4,
-    img: R1,
+    img: R5,
     title: "3bkh room near 5road",
     prevPrice: 4000,
     newPrice: "50",
